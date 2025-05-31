@@ -24,4 +24,35 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
     });
+
+    //OrderButton-index
+    document.getElementById("btn-order").addEventListener("click", function () {
+    const appointment = document.getElementById("appointment");
+    const orderButton = document.getElementById("btn-order");
+
+    appointment.classList.add("show");
+    orderButton.style.display = "none";
 });
+
+//birth certificates
+document.getElementById("birth-certificate").onclick = function (){
+    window.location.href = "choose-for.php";
+}
+
+//marriage cert
+document.getElementById("marriage-certificate").onclick = function() {
+    window.location.href = "choose-for.php";
+}
+
+document.getElementById("death-certificate").onclick = function(){
+    window.location.href = "choose-for.php";
+}
+
+document.getElementById("cenomar").onclick = function(){
+    window.location.href = "choose-for.php";
+}
+});
+
+document.getElementById("btn-return").onclick = function (){
+    window.history.back();
+}

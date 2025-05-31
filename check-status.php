@@ -8,20 +8,21 @@
     <title>eSertipiko Marikina: Online Registration for Civil Documents</title>
 </head>
 <body>
-     <div class="sticky-header">
+    <body>
+    <!----Header----->
+    <div class="sticky-header">
     <section class="header">
         <div class="logo">
-            <h1><a href="index.html">eSertipiko Marikina</a></h1>
+            <h1><a href="index.php">eSertipiko Marikina</a></h1>
         </div>
         <div class="navigator">
             <nav>
                 <ul>
-                    <li><button id="btn"><a href="order.html">Order now</a></button></li>
-                    <li><a href="check-status.html">Check Status</a></li>
-                    <li><a href="payment-method.html">Payment Method</a></li>
+                    <li><a href="check-status.php">Check Status</a></li>
+                    <li><a href="payment-method.php">Payment Method</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">Civil Registry Documents</a>
-                        <div class="dropdown-box">
+                         <div class="dropdown-box">
                             <a href="#">Birth Certificate</a>
                             <a href="#">Marriage Certificate</a>
                             <a href="#">CENOMAR</a>

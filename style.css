@@ -6,6 +6,10 @@
     font-family: 'Poppins';
 }
 
+html body{
+    overflow-x: hidden;
+}
+
 .sticky-header{
     position: sticky;
     top: 0;
@@ -21,6 +25,14 @@
     padding: 20px;
     box-shadow: 0px 0px 1px #363636;
     width: 100vw;
+    max-width: 100%;
+}
+
+.bi-person-fill{
+    font-size: 35px;
+    position: absolute;
+    right: 40px;
+    top: 11px;
 }
 
 .logo h1 a{
@@ -45,25 +57,6 @@
     display: block;
     font-weight: bold;
     color:#363636;
-}
-
-#btn{
-    width: 7rem;
-    padding: 5px;
-    border: none;
-    border-radius: 30px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    background-color: #116ed6;
-    transition: .3s ease-in-out;
-}
-
-#btn a{
-    color: #fff;
-    transition: .3s ease-in-out;
-}
-
-#btn:hover{
-    transform: scale(1.1);
 }
 
 .navigator li a:hover{
@@ -97,8 +90,9 @@
 /*  FOR CONTENT */
 
 .first_view{
-    height: 85vh;
+    height: 88vh;
     width: 100vw;
+    max-width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(marikina.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -142,6 +136,7 @@
     position: relative;
     top: 500px;
     transition: .3s ease-in-out;
+    cursor: pointer;
 }
 
 #btn-order:hover{
@@ -152,7 +147,7 @@
 .text-description{
     margin: auto;
     text-align: center;
-    padding: 40px;
+    margin-bottom: 60px;
     width: 60%;
 }
 
@@ -208,9 +203,340 @@
     padding: 10px;
     margin: 20px 0px;
     transition: .3s ease-in-out;
+    cursor: pointer;
 }
 
 .btn-certificate:hover{
     transform: scale(1.2);
     background-color: #116ed6;
 }
+
+footer{
+    width: 100%;
+    background-color: #01070e;
+    color: #116ed6;
+    position: relative;
+}
+
+.footer-container{
+    padding: 50px 60px;
+    display:flex;
+    justify-content: space-between;
+}
+.footer p{
+    color: #c0c0c0;
+}
+
+.footer-title{
+    font-weight: bold;
+}
+
+.icon{
+    text-align: center;
+    padding: 20px;
+}
+.contact-us{
+    width: 300px;
+}
+.partnership #psa{
+    color: #116ed6;
+}
+.icon-logo{
+    font-size: 30px;
+    padding: 0px 10px;
+}
+.copyright{
+    background-color: #000000;
+    text-align: center;
+    font-size: 13px;
+}
+
+#appointment {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+}
+
+#appointment.show {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+
+#about-us{
+    padding: 30px 0px;
+}
+
+.appointment-selection{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+    top: 390px;
+}
+
+.selection-container img{
+    height: 100px;
+}
+
+.selection-container a{
+    text-decoration: none;
+    color: #242323;
+}
+.selection-container{
+    text-align: center;
+    background-color: #cddef1;
+    margin: 10px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: .3s ease-in-out;
+}
+
+.selection-container:hover{
+    transform: scale(1.1);
+}
+
+/* walk-in html */
+
+.online-appointment{
+    height: 100vh;
+    width: 40%;
+    margin: auto;
+}
+
+.walk-in-appoinment-title{
+    background-color: #cddef1;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.appoinment-container{
+    width: 90%;
+    margin: auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.178);
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.form-group{
+    margin: 10px;
+    height: 75px;
+}
+
+#warningMsg{
+    font-size: 15px;
+    color: rgb(245, 164, 158);
+    margin-left: 6px;
+}
+
+#warningMsgContact{
+    font-size: 15px;
+    color: rgb(245, 164, 158);
+    margin-left: 6px;
+}
+
+.input-label{
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-value{
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    color:#707070; 
+    font-size: 15px;
+    padding: 5px 10px;
+}
+
+#selectDocument option[disabled]{
+    display: none;
+}
+
+.form-group-confirm{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+#confirmation-label{
+    position:relative;
+    top: 12px;
+}
+
+.submit-btn{
+    text-align: center;
+}
+
+#submit-btn{
+    width: 15%;
+    height: 25%;
+    padding: 7px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #4071a0;
+    color: #ffff;
+    transition: .3s ease-in-out;
+    cursor: pointer;;
+}
+
+#submit-btn:hover{
+    transform: scale(1.1);
+}
+
+#warningText{
+    opacity: 0;
+}
+
+#warningText.show{
+    opacity: 1;
+}
+
+.delivery-appoinment{
+    height: 100vh;
+}
+
+.choose-document-type{
+    width: 40%;
+    height: 80vh;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.choose-document-type h3{
+    margin-bottom: 10px;
+}
+
+.document-type{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.document-type button{
+    border: none;
+    height: 40px;
+    margin: 10px 0px;
+    font-weight: 500;
+    color: #363636;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: .1s ease-in-out;
+}
+
+.document-type button.selected{
+    background-color: #4071a0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.document-type button:hover{
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #4071a0;
+    color: #fff;
+}
+
+.choose-for-type{
+    height: 60vh;
+    width: 40%;
+    margin: auto;
+}
+
+.someone-self-container{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.choices-container{
+    background-color: #b8cde2;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 40%;
+    margin: 20px;
+    transition: .3s ease-in-out;
+}
+
+.choices-container:hover{
+    transform: scale(1.1);
+}
+
+.choices-container a{
+    text-decoration: none;
+    color: #303030;
+}
+
+.choices-container img{
+    height: 100px;
+    width: 100px;
+}
+
+.choose-for-type-title{
+    background-color: #e5ebf3;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.btn-return{
+    text-align: center;
+    margin-top: 40px;
+}
+#btn-return{
+    border: none;
+    background-color:#4071a0;
+    width: 10%;
+    height: 10%;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+#btn-return:hover{
+    background-color: #2c4f70;
+}
+
+.termsandPolicy{
+    background-color: #d5dce4;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0px;
+}
+
+.choose-type-submit{
+    text-align: center;
+    margin-top: 40px;
+}
+#choose-type-submit{
+    border: none;
+    background-color:#4071a0;
+    color:#fff;
+    width: 10%;
+    height: 10%;
+    padding: 5px;
+    width: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#type-back-btn{
+    border: none;
+    background-color:#4071a0;
+    color:#fff;
+    width: 80px;
+    height: 10%;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

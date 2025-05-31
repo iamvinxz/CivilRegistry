@@ -1,0 +1,7 @@
+document.getElementById('father-back-btn').onclick = function () {
+    window.history.back();
+};
+
+document.getElementById('mother-back-btn').onclick = function (){
+    window.history.back();
+};

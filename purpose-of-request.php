@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="birth-cert.css">
     <link rel="icon" href="android-chrome-192x192.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>eSertipiko Marikina: Online Registration for Civil Documents</title>
 </head>
 <body>
+     <!----Header----->
     <div class="sticky-header">
     <section class="header">
         <div class="logo">
@@ -16,11 +19,10 @@
         <div class="navigator">
             <nav>
                 <ul>
-                    <li><button id="btn"><a href="order.html">Order now</a></button></li>
-                    <li><a href="check-status.html">Check Status</a></li>
-                    <li><a href="payment-method.html">Payment Method</a></li>
+                    <li><a href="check-status.html" class="select">Check Status</a></li>
+                    <li><a href="payment-method.html" class="select">Payment Method</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Civil Registry Documents</a>
+                        <a href="#" class="dropdown-toggle" class="select">Civil Registry Documents</a>
                         <div class="dropdown-box">
                             <a href="#">Birth Certificate</a>
                             <a href="#">Marriage Certificate</a>
@@ -29,8 +31,8 @@
                         </div>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Resources</a>
-                        <div class="dropdown-box">
+                        <a href="#" class="dropdown-toggle" class="select">Resources</a>
+                         <div class="dropdown-box">
                             <a href="#">News & Announcement</a>
                             <a href="#">Delivery Reminder</a>
                             <a href="#">Contacts</a>
@@ -41,6 +43,7 @@
         </div>
     </section>
     </div>
-    <script src="index.js"></script>
+
+    
 </body>
 </html>
