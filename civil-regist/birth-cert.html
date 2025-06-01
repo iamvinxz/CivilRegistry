@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PSA Birth Certificate | eSertipiko Marikina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .sticky-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: #fff;
+      width: 100vw;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 20px;
+      min-height: 50px;
+      width: 100vw;
+    }
+
+    .logo h1 {
+      font-size: 18px;
+      margin: 0;
+      line-height: 1;
+    }
+
+    .logo h1 a {
+      text-decoration: none;
+      color: #01070e;
+    }
+
+    .navigator ul {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navigator li {
+      position: relative;
+    }
+
+    .navigator li a {
+      text-decoration: none;
+      padding: 4px 6px;
+      font-weight: bold;
+      color: #363636;
+      font-size: 14px;
+      line-height: 1;
+    }
+
+    .navigator li a:hover {
+      color: #116ed6;
+    }
+
+    .navigator li img {
+        width: 20px;
+        height: 26px;
+        border-radius: 10%; 
+        object-fit: cover;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .navigator li img:hover {
+     transform: scale(1.1);
+    }
+
+
+    #btn {
+      width: 7rem;
+      padding: 5px;
+      border: none;
+      border-radius: 30px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      background-color: #116ed6;
+      transition: .3s ease-in-out;
+    }
+
+    #btn a {
+      color: #fff;
+      transition: .3s ease-in-out;
+    }
+
+    #btn:hover {
+      transform: scale(1.1);
+    }
+
+    .dropdown-box {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      right: 2px;
+      box-shadow: 0 2px 6px rgb(0, 0, 0);
+      border-radius: 5px;
+      width: 230px;
+      background-color: #fff;
+      z-index: 100;
+    }
+
+    .dropdown .dropdown-box a {
+      padding: 10px;
+      text-decoration: none;
+      font-weight: 400;
+    }
+
+    .dropdown .dropdown-box a:hover {
+      color: #fff;
+      background-color: #116ed6;
+    }
+
+    .first_view {
+      height: 25vh;
+      width: 100vw;
+      background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url('https://pilipinomirror.com/wp-content/uploads/2024/11/marikina-city.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      text-align: center;
+      padding: 0 20px;
+      overflow: hidden;
+    }
+
+    .fv-text {
+      max-width: 960px;
+      color: #fff;
+    }
+
+    .first_view h1 {
+      font-size: 42px; 
+      font: weight 9px;
+      margin-bottom: 10px;
+      line-height: 1;
+    }
+
+    .first_view p {
+      color: #e6e3e3;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .content-box {
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 0 20px;
+        text-align: justify;
+    }
+    .content-box img {
+        width: 100%;        
+        max-width: 600px;  
+        height: auto;       
+        display: block;
+        margin-bottom: 20px;
+    }
+    .content-box h2 {
+        font-size: 28px; 
+        margin-bottom: 5px;
+        }
+
+    .content-box p {
+        font-size: 16px; /* Adjust this as needed */
+        line-height: 1.6;
+        color: #363636;
+        }
+
+    #btn-order {
+        padding: 12px 20px;
+        background-color: #116ed6;
+        border: none;
+        border-radius: 30px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+        width: 150px;
+        cursor: pointer;
+        display: block;
+        margin: 30px auto 0 auto; 
+        transition: .3s ease-in-out;
+    }
+
+    #btn-order:hover {
+      background-color: #116ed6;
+      transform: scale(1.1);
+    }
+
+     footer {
+      background-color: #0c0c0c;
+      color: #0080ff;
+      padding: 2rem 1rem;
+      font-size: 14px;
+      margin-top: 3rem;
+    }
+    .footer-content {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .footer-column {
+      flex: 1 1 250px;
+      
+    }
+    .footer-column a {
+        text-decoration: none;
+      color: #ffffff;
+     margin: 5px 0;
+    }  
+    .footer-column p {
+      margin: 5px 0;
+      
+     
+    }
+    
+    .footer-icons {
+      margin-top: 10px;
+      color: #80bfff;
+    }
+    .footer-icons i {
+      font-size: 20px;
+        color: #0080ff;
+        margin-right: 8px;
+    }
+
+    .footer-label {
+    color: white;
+    font-weight: bold;
+    }
+    .footer-heading {
+    color: white;
+    }
+
+    .copyright {
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <div class="sticky-header">
+    <div class="header">
+      <div class="logo">
+        <h1><a href="#">eSertipiko Marikina</a></h1>
+      </div>
+      <div class="navigator">
+        <ul>
+          <li><a href="#">Online Appointment</a></li>
+          <li><a href="#">Check Status</a></li>
+          <li><a href="#">Payment Method</a></li>
+          <li class="dropdown">
+          <a href="#" id="civil-registry-toggle">Civil Registry Documents</a>
+            <div class="dropdown-box" id="civil-registry-menu">
+                <a href="birth-cert.html">Birth Certificate</a>
+                <a href="marriage-cert.html">Marriage Certificate</a>
+                <a href="cenomar.html">CENOMAR</a>
+                <a href="death-cert.html">Death Certificate</a>
+            </div>
+            </li>
+          <li><a href="#">Resources</a></li>
+          <li>
+            <a href="#" class="admin-profile">
+                <img src="C:\Users\Danielle\Documents\civil-regist\personal.png" alt="Admin" />
+            </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="first_view">
+    <div class="fv-text">
+      <h1>About the PSA Birth Certificate</h1>
+      <p>Learn everything you need to know about getting your PSA Birth Certificate—how to apply, how it will be delivered, available payment methods, and how your information is kept safe.</p>
+    </div>
+  </section>
+
+  <!-- Overview Content -->
+  <div class="content-box">
+    <h2>PSA Birth Certificate</h2>
+    <p>Overview of the PSA Birth Certificate</p>
+    <br>
+    <img src="https://psahelpline.ph/img/civil-registry/birth/banner.jpeg" alt="PSA Birth Certificate Image">
+    <p>
+      A PSA Birth Certificate is an official document issued by the Philippine Statistics Authority (PSA) that serves as legal proof of a person's birth. It contains key personal information 
+      such as the individual’s full name, date and place of birth, gender, and the names of their parents. This document is vital for establishing one’s identity, nationality, and family background.
+      <br><br>   
+      Whether you’re applying for a passport, enrolling in school, securing government-issued 
+      IDs, or processing employment documents, a PSA birth certificate is almost always required. It is one of the most essential documents that every Filipino needs throughout different stages of life.
+      <br><br>
+      You can now request your PSA birth certificate online through an authorized platform. Simply submit your application, choose a payment method, and have your document delivered straight to your address—no need to line up or visit a physical office.
+      <br><br>
+      A complete guide is provided to help you apply for your PSA birth certificate—whether online or in person—including step-by-step instructions, payment details, and delivery timelines to ensure a smooth and hassle-free experience.
+    </p>
+        <button id="btn-order">Order Now</button>
+  </div>
+   
+  <!-- New Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <p class="footer-heading"><strong>Contact us</strong></p>
+        <p><i class="fas fa-envelope"></i> esertipiko.marikina@gmail.com</p>
+        <p><i class="fas fa-phone"></i> (375) 748-1838</p>
+        <p><i class="fas fa-map-marker-alt"></i> Blk 7 Lot 10 Tuazon St. Barangay Sta. Elena, Marikina City</p>
+      </div>
+      <div class="footer-column">
+        <p><a href="#">User Agreement</a></p>
+        <p><a href="#">Terms and Policy</a></p>
+      </div>
+      <div class="footer-column">
+        <p class="footer-label">Accredited Partner of:</p>
+        <p><a href="#" style="text-decoration: underline;">Philippine Statistics Authority</a></p>
+        <div class="footer-icons">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      Copyright © <strong>eSertipiko Marikina</strong> 2025. All rights reserved.
+    </div>
+  </footer>
+  <script>
+  const toggleBtn = document.getElementById("civil-registry-toggle");
+  const dropdownMenu = document.getElementById("civil-registry-menu");
+
+  document.addEventListener("click", function (event) {
+    const isClickInside = toggleBtn.contains(event.target) || dropdownMenu.contains(event.target);
+
+    if (isClickInside) {
+      dropdownMenu.style.display = dropdownMenu.style.display === "flex" ? "none" : "flex";
+    } else {
+      dropdownMenu.style.display = "none";
+    }
+  });
+</script>
+
+
+</body>
+</html>
