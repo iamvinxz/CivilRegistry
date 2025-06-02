@@ -33,6 +33,10 @@
     margin: 5px 0px;
 }
 
+.sex-container:focus{
+    border: 2px solid #326ca3;
+}
+
 .form-group{
     margin-bottom: 18px 25px;
 }
@@ -64,7 +68,7 @@ form p{
     text-align: center;
 }
 
-#birth-place-back, #birth-place-btn, #mother-back-btn, #father-back-btn, #father-btn, #birth-btn, #birth-back-btn, #purpose-btn, #purpose-back-btn, #purpose-btn, #delivery-back{
+#birth-place-back, #birth-place-btn, #mother-birth-btn,#mother-back-btn, #father-back-btn, #father-btn, #birth-btn, #birth-back-btn, #purpose-btn, #purpose-back-btn, #purpose-btn, #delivery-back,#delivery-birth-btn{
     border: none;
     background-color:#4071a0;
     width: 15%;
@@ -129,4 +133,4 @@ form p{
     margin: 15px 0px;
     font-size: 15px;
 }
- 
+

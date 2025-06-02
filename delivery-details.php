@@ -103,10 +103,11 @@
 
             <div class="submit-btn-birth">
                 <button id="delivery-back" type="button">Back</button>
-                <button id="birth-btn" type="submit">Continue</button>
+                <button id="delivery-birth-btn" type="submit">Continue</button>
             </div>
         </form>
     </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="delivery.js"></script> 
 </body>
 </html>

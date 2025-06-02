@@ -71,14 +71,15 @@
             </div>
              <div class="form-group">
                 <label class="input-label">Your Mother's Maiden Last Name</label>
-                <input class="input-value" type="text" id="nother-last-name" placeholder="Last name" name="mother-last-name">
+                <input class="input-value" type="text" id="mother-last-name" placeholder="Last name" name="mother-last-name">
             </div>
               <div class="submit-btn-birth">
                 <button id="mother-back-btn" type="button">Back</button>
-                <button id="birth-btn">Continue</button>
+                <button id="mother-birth-btn">Continue</button>
             </div>
         </form>
     </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="mother.js"></script>
 </body>
 </html>

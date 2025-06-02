@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <link rel="icon" href="android-chrome-192x192.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <title>eSertipiko Marikina: Online Registration for Civil Documents</title>
-</head>
 </head>
 <body>
     <!----Header----->
@@ -52,13 +50,13 @@
         </div>
         <div class="someone-self-container">
             <div class="choices-container">
-                <a href="choose-type.php">
+                <a href="choose-type.php?type=personal">
                     <img src="personal.png">
                     <h3>Personal</h3>
                 </a>
             </div>
             <div class="choices-container">
-                <a href="choose-type.php">
+                <a href="choose-type.php?type=someone">
                     <img src="someone.png">
                     <h3>For someone else</h3>
                 </a>
@@ -101,5 +99,6 @@
         </div>
     </footer>
     <script src="index.js"></script>
+    <script src="delivery.js"></script> 
 </body>
 </html>

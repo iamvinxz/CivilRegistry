@@ -58,15 +58,15 @@
             </div>
             <div class="form-group">
                 <label class="input-label">Your Father's Name</label>
-                <input class="input-value" type="text" id="first-name" placeholder="First name" name="father-first-name">
+                <input class="input-value" type="text" id="father-first-name" placeholder="First name" name="father-first-name">
             </div>
              <div class="form-group">
                 <label class="input-label">Your Father's Middle Name</label>
-                <input class="input-value" type="text" id="first-name" placeholder="Middle name" name="father-middle-name">
+                <input class="input-value" type="text" id="father-middle-name" placeholder="Middle name" name="father-middle-name">
             </div>
              <div class="form-group">
                 <label class="input-label">Your Father's Last Name</label>
-                <input class="input-value" type="text" id="first-name" placeholder="Last name" name="father-last-name">
+                <input class="input-value" type="text" id="father-last-name" placeholder="Last name" name="father-last-name">
             </div>
               <div class="submit-btn-birth">
                 <button id="father-back-btn" type="button">Back</button>
@@ -74,6 +74,7 @@
             </div>
         </form>
     </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src='father.js'></script>
 </body>
 </html>

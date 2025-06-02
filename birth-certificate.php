@@ -1,3 +1,21 @@
+<?php
+session_start();
+
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    $_SESSION['sex'] = $_POST['sex'] ?? '';
+    $_SESSION['marital-status'] = $_POST['marital-status'] ?? '';
+    $_SESSION['first-name'] = $_POST['first-name'] ?? '';
+    $_SESSION['middle-name'] = $_POST['middle-name'] ?? '';
+    $_SESSION['last-name'] = $_POST['last-name'] ?? '';
+    $_SESSION['married-last-name'] = $_POST['married-last-name'] ?? '';
+    $_SESSION['birthday'] = $_POST['birthday'] ?? '';
+    $_SESSION['type_Of_Id'] = $_POST['type_Of_Id'] ?? '';
+
+    header("Location: father.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,9 +74,9 @@
                 <label class="input-label-sex">Sex</label><br>
                 <div class="sex-container">
                     <input type="radio" id="sex-male" name="sex" value="male">
-                    <label>Male</label><br>
+                    <label for="sex">Male</label><br>
                     <input type="radio" id="sex-female" name="sex" value="female">
-                    <label>Female</label>
+                    <label for="sex">Female</label>
                 </div>
             </div>
             <div class="form-group-check-personal" id="civil-status-personal" style="display: none;">
@@ -92,17 +110,17 @@
             </div>
              <div class="form-group">
                 <label class="input-label">Your ID Type</label>
-              <select class="input-value" id="selectIDType" name="type_Of_Id">
-                        <option disabled selected>--Select Type of ID--</option>
-                        <option>Philippine Identification System (Philsys)</option>
-                        <option>Philippine Passport issued by Department of Foreign Affairs (DFA)</option>
-                        <option>Driver's License issued by Land Transportation Office (LTO)</option>
-                        <option>Integrated Bar of the Philippine (IBP) ID</option>
-                        <option>Government Service Insurance System (GSIS)</option>
-                        <option>Social Security System (SSS) ID</option>
-                        <option>Voter's ID issued by Commision of Election (COMELEC)</option>
-                        <option>Professional Regulation Commission (PRC) ID</option>
-                </select>
+                <select class="input-value" id="selectIDType" name="type_Of_Id">
+                            <option disabled selected>--Select Type of ID--</option>
+                            <option>Philippine Identification System (Philsys)</option>
+                            <option>Philippine Passport issued by Department of Foreign Affairs (DFA)</option>
+                            <option>Driver's License issued by Land Transportation Office (LTO)</option>
+                            <option>Integrated Bar of the Philippine (IBP) ID</option>
+                            <option>Government Service Insurance System (GSIS)</option>
+                            <option>Social Security System (SSS) ID</option>
+                            <option>Voter's ID issued by Commision of Election (COMELEC)</option>
+                            <option>Professional Regulation Commission (PRC) ID</option>
+                    </select>
             </div>
 
             <div class="submit-btn-birth">
@@ -111,22 +129,10 @@
             </div>
         </form>
     </div>
-    <script src="birth-form.js"></script>
+    <script defer src="birth-form.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
 
-<?php
-session_start();
 
-if($_SERVER['REQUEST_METHOD'] == 'POST'){
-    $_SESSION['sex'] = $_POST['sex'] ?? '';
-    $_SESSION['marital-status'] = $_POST['marital-status'] ?? '';
-    $_SESSION['first-name'] = $_POST['first-name'] ?? '';
-    $_SESSION['middle-name'] = $_POST['middle-name'] ?? '';
-    $_SESSION['last-name'] = $_POST['last-name'] ?? '';
-    $_SESSION['married-last-name'] = $_POST['married-last-name'] ?? '';
-    $_SESSION['birthday'] = $_POST['birthday'] ?? '';
-    $_SESSION['type_Of_Id'] = $_POST['type_Of_Id'] ?? '';
-}
-?>
 

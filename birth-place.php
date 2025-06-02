@@ -68,7 +68,9 @@
                 <button id="birth-place-back" type="button">Back</button>
                 <button id="birth-place-btn">Continue</button>
             </div>
+         </form>
     </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="birth-place.js"></script>
 </body>
 </html>

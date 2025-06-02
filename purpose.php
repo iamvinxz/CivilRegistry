@@ -56,7 +56,7 @@
             <div class="form-group-purpose">
                 <label class="input-label">Your purpose for this request</label>
                 <select class="input-value-purpose" id="selectPurpose" name="selectPurpose">
-                        <option disabled selected>-Select Option-</option>
+                        <option value="" disabled selected>-Select Option-</option>
                         <option>Travel/Passport</option>
                         <option>School</option>
                         <option>Local Employment</option>
@@ -72,6 +72,7 @@
             </div>
         </form>
     </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
      <script src="purpose.js"></script> 
 </body>
 </html>
