@@ -48,7 +48,7 @@
         <div class="form-title">
             <h3>Please provide the following information below</h3>
         </div>
-        <form action="#" method="post">
+        <form action="payment.php" method="post">
             <div class="form-p">
                 <p>Delivery Information</p>
             </div>
@@ -99,8 +99,20 @@
                 <label class="input-label">Email Address</label>
                 <input class="input-value" type="text" id="email-address" placeholder="Email Address" name="email-address">
             </div>
-             
-
+              <div class="form-group">
+                <label class="input-label">Payment Method</label>
+                <select class="input-value" id="selectPayment" name="payment">
+                    <option selected disabled>Select Payment</option>
+                    <option>Gcash</option>
+                    <option>Maya</option>
+                    <option>VISA</option>
+                    <option>BayadOnline</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="input-label" id="name-recipient">Control Number</label>
+                <input class="input-value" type="text" id="controlNumber" placeholder="Enter your number">
+            </div>
             <div class="submit-btn-birth">
                 <button id="delivery-back" type="button">Back</button>
                 <button id="delivery-birth-btn" type="submit">Continue</button>

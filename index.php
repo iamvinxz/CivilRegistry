@@ -23,10 +23,10 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" class="select">Civil Registry Documents</a>
                         <div class="dropdown-box">
-                            <a href="#">Birth Certificate</a>
-                            <a href="#">Marriage Certificate</a>
-                            <a href="#">CENOMAR</a>
-                            <a href="#">Death Certificate</a>
+                            <a href="birth-cert.html">Birth Certificate</a>
+                            <a href="marriage-cert.html">Marriage Certificate</a>
+                            <a href="cenomar.html">CENOMAR</a>
+                            <a href="death-cert.html">Death Certificate</a>
                         </div>
                     </li>
                     <li class="dropdown">

@@ -5,6 +5,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const middleNameInput = document.getElementById('father-middle-name');
   const lastNameInput = document.getElementById('father-last-name');
 
+ const urlParams = new URLSearchParams(window.location.search);
+  const userType = urlParams.get('type');
+
+    const userTypeInput = document.getElementById("user-type");
+        if (userTypeInput) {
+            userTypeInput.value = userType;
+        }
+
+    console.log("Type is:", userType);
+
   // Checkbox change handler - disable/enable inputs and clear values if checked
   noFatherCheckbox.addEventListener('change', function () {
     const disabled = this.checked;
@@ -30,4 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
       swal("Warning", "Please fill in all required fields.", "warning");
     }
   });
+
+  document.getElementById('father-back-btn').onclick = function() {
+    window.history.back();
+  }
 });

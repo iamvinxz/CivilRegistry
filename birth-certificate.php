@@ -124,6 +124,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             </div>
 
             <div class="submit-btn-birth">
+                <input type="hidden" name="type" id="user-type"/>
                 <button id="birth-back-btn">Back</button>
                 <button id="birth-btn" type="submit">Continue</button>
             </div>
@@ -131,6 +132,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     </div>
     <script defer src="birth-form.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
 

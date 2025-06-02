@@ -69,6 +69,7 @@
                 <input class="input-value" type="text" id="father-last-name" placeholder="Last name" name="father-last-name">
             </div>
               <div class="submit-btn-birth">
+                <input type="hidden" name="type" id="user-type"/>
                 <button id="father-back-btn" type="button">Back</button>
                 <button id="father-btn" type="submit">Continue</button>
             </div>
