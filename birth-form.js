@@ -6,18 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const marriedLastNameDiv = document.getElementById("form-married-last-name");
     const labelMiddleName = document.getElementById('middle-name-personal');
     const labelLastName = document.getElementById('last-name-personal');
+
             
-    const urlParams = new URLSearchParams(window.location.search);
-    const userType = urlParams.get('type');
-
-    const userTypeInput = document.getElementById("user-type");
-        if (userTypeInput) {
-            userTypeInput.value = userType;
-        }
-
-    console.log("Type is:", userType);
-
-
     // Listen to sex radio buttons
     sexRadios.forEach(radio => {
         radio.addEventListener("change", function () {
@@ -54,8 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const birthday = document.querySelector('input[type="date"]').value;
         const typeOfId = document.getElementById('selectIDType').value;
 
-        window.location.href = `father.php?type=${userType}`;
-
         if (!name || !middleName || !lastName || birthday === "" || !typeOfId || typeOfId.startsWith("--")) {
             event.preventDefault();
             swal("Warning", "Please fill in all required fields.", "warning");
@@ -81,8 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 swal("Warning", "Please enter your married last name.", "warning");
                 return;
             }
-        } 
-        
+        }
     });
 
     document.getElementById("birth-back-btn").addEventListener("click", function(event) {
